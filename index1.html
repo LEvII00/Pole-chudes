@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="mx-auto pole" style="background-image: url(pole.png); background-size: 100% 100%; height: 600px; width: 800px; display: block;">
+      
+    </div>
+    <div style="display: none;" class="gl">
+      <div class="ochki display-2" style="position: absolute;">500</div>
+      <div class="bg-dark mx-auto mt-2" style="height: 100px; width: 650px;">
+      
+    </div>
+    <div class="row mt-5" style="margin-left: 525px;">
+      <div class="bg-dark border border-white" style="height: 100px; width: 100px;">
+        <h2 class="text-white display-3 ml-4 d1" style="display: none;">К</h2>
+      </div>
+       <div class="bg-dark border border-white" style="height: 100px; width: 100px;">
+         <h2 class="text-white display-3 ml-4 o2" style="display: none;">А</h2>
+       </div>
+       <div class="bg-dark border border-white" style="height: 100px; width: 100px;">
+         <h2 class="text-white display-3 ml-4 o3" style="display: none;">Л</h2>
+       </div>
+      <div class="bg-dark border border-white" style="height: 100px; width: 100px;">
+        <h2 class="text-white display-3 ml-4 m4" style="display: none;">Ы</h2>
+      </div>
+      <div class="bg-dark border border-white" style="height: 100px; width: 100px;">
+        <h2 class="text-white display-3 ml-4 d1" style="display: none;">В</h2>
+      </div>
+      <div class="bg-dark border border-white" style="height: 100px; width: 100px;">
+        <h2 class="text-white display-3 ml-4 d1" style="display: none;">А</h2>
+      </div>
+      <div class="bg-dark border border-white" style="height: 100px; width: 100px;">
+        <h2 class="text-white display-3 ml-4 d1" style="display: none;">Н</h2>
+      </div>
+    </div>
+      <div class="row mt-3" style="margin-left: 550px;">
+      <h2 class="a ml-1">А</h2>
+      <h2 class="a1 ml-1">Б</h2>
+      <h2 class="a2 ml-1">В</h2>
+      <h2 class="a3 ml-1">Г</h2>
+      <h2 class="a4 ml-1">Д</h2>
+      <h2 class="a5 ml-1">Е</h2>
+      <h2 class="a6 ml-1">G</h2>
+      <h2 class="a7 ml-1">H</h2>
+      <h2 class="a8 ml-1">L</h2>
+      <h2 class="a9 ml-1">J</h2>
+      <h2 class="a10 ml-1">K</h2>
+      <h2 class="a11 ml-1">L</h2>
+      <h2 class="a12 ml-1">M</h2>
+      <h2 class="a13 ml-1">H</h2>
+      <h2 class="a14 ml-1">O</h2>
+    </div>
+    <div class="row mt-3" style="position: absolute; margin-left: 550px;">
+      <h2 class="a15 ml-1">P</h2>
+      <h2 class="a16 ml-1">Q</h2>
+      <h2 class="a17 ml-1">R</h2>
+      <h2 class="a18 ml-1">S</h2>
+      <h2 class="a19 ml-1">T</h2>
+      <h2 class="a20 ml-1">U</h2>
+      <h2 class="a21 ml-1">V</h2>
+      <h2 class="a22 ml-1">W</h2>
+      <h2 class="a23 ml-1">X</h2>
+      <h2 class="a24 ml-1">Y</h2>
+      <h2 class="a25 ml-1">Z</h2>
+    </div>
+    <div class="rounded yak ml-5" style="background-image: url(https://is4-ssl.mzstatic.com/image/thumb/Purple5/v4/8e/56/ed/8e56edbe-4099-6935-c989-9468c8df308f/mzl.uwyeqveg.png/246x0w.jpg); background-size: 100% 100%; height: 350px; width: 350px;"></div>
+    </div>
+
+
+    <script type="text/javascript">
+       let ochki = 500;
+
+       let pole = function(){
+          document.querySelector(".pole").style.display = "none";
+          document.querySelector(".gl").style.display = "block";
+        }
+        setTimeout(pole, 2000);
+
+
+      document.querySelector(".a").onclick = function(){
+        alert("Не правильно!");
+        ochki = ochki - 75;
+        document.querySelector(".ochki").innerHTML = ochki;
+      }
+      document.querySelector(".a1").onclick = function(){
+        alert("Не правильно!");
+        ochki = ochki - 75;
+        document.querySelector(".ochki").innerHTML = ochki;
+      }
+      document.querySelector(".a2").onclick = function(){
+        alert("Не правильно!");
+        ochki = ochki - 75;
+        document.querySelector(".ochki").innerHTML = ochki;
+      }
+      document.querySelector(".a3").onclick = function(){
+        alert("Правильно!");
+        document.querySelector(".d1").style.display = "block";
+        ochki = ochki + 250;
+        document.querySelector(".ochki").innerHTML = ochki;
+      }
+      document.querySelector(".a4").onclick = function(){
+        alert("Не правильно!");
+        ochki = ochki - 75;
+        document.querySelector(".ochki").innerHTML = ochki;
+      }
+      document.querySelector(".a5").onclick = function(){
+        alert("Не правильно!");
+        ochki = ochki - 75;
+        document.querySelector(".ochki").innerHTML = ochki;
+      }
+      document.querySelector(".a6").onclick = function(){
+        alert("Не правильно!");
+        ochki = ochki - 75;
+        document.querySelector(".ochki").innerHTML = ochki;
+      }
+      document.querySelector(".a7").onclick = function(){
+        alert("Не правильно!");
+        ochki = ochki - 75;
+        document.querySelector(".ochki").innerHTML = ochki;
+      }
+      document.querySelector(".a8").onclick = function(){
+        alert("Не правильно!");
+        ochki = ochki - 75;
+        document.querySelector(".ochki").innerHTML = ochki;
+      }
+      document.querySelector(".a9").onclick = function(){
+        alert("Не правильно!");
+        ochki = ochki - 75;
+        document.querySelector(".ochki").innerHTML = ochki;
+      }
+      document.querySelector(".a10").onclick = function(){
+        alert("Не правильно!");
+        ochki = ochki - 75;
+        document.querySelector(".ochki").innerHTML = ochki;
+      }
+      document.querySelector(".a11").onclick = function(){
+        alert("Не правильно!");
+        ochki = ochki - 75;
+        document.querySelector(".ochki").innerHTML = ochki;
+      }
+      document.querySelector(".a12").onclick = function(){
+        alert("Правильно!");
+        document.querySelector(".m4").style.display = "block";
+        ochki = ochki + 250;
+        document.querySelector(".ochki").innerHTML = ochki;
+      }
+      document.querySelector(".a13").onclick = function(){
+        alert("Не правильно!");
+        ochki = ochki - 75;
+        document.querySelector(".ochki").innerHTML = ochki;
+      }
+      document.querySelector(".a14").onclick = function(){
+        alert("Правильно!");
+        document.querySelector(".o2").style.display = "block";
+        document.querySelector(".o3").style.display = "block";
+        ochki = ochki + 250;
+        document.querySelector(".ochki").innerHTML = ochki;
+      }
+      document.querySelector(".a15").onclick = function(){
+        alert("Не правильно!");
+        ochki = ochki - 75;
+        document.querySelector(".ochki").innerHTML = ochki;
+      }
+      document.querySelector(".a16").onclick = function(){
+        alert("Не правильно!");
+        ochki = ochki - 75;
+        document.querySelector(".ochki").innerHTML = ochki;
+      }
+      document.querySelector(".a17").onclick = function(){
+        alert("Не правильно!");
+        ochki = ochki - 75;
+        document.querySelector(".ochki").innerHTML = ochki;
+      }
+      document.querySelector(".a18").onclick = function(){
+        alert("Не правильно!");
+        ochki = ochki - 75;
+        document.querySelector(".ochki").innerHTML = ochki;
+      }
+      document.querySelector(".a19").onclick = function(){
+        alert("Не правильно!");
+        ochki = ochki - 75;
+        document.querySelector(".ochki").innerHTML = ochki;
+      }
+      document.querySelector(".a20").onclick = function(){
+        alert("Не правильно!");
+        ochki = ochki - 75;
+        document.querySelector(".ochki").innerHTML = ochki;
+      }
+      document.querySelector(".a21").onclick = function(){
+        alert("Не правильно!");
+        ochki = ochki - 75;
+        document.querySelector(".ochki").innerHTML = ochki;
+      }
+      document.querySelector(".a22").onclick = function(){
+        alert("Не правильно!");
+        ochki = ochki - 75;
+        document.querySelector(".ochki").innerHTML = ochki;
+      }
+      document.querySelector(".a23").onclick = function(){
+        alert("Не правильно!");
+        ochki = ochki - 75;
+        document.querySelector(".ochki").innerHTML = ochki;
+      }
+      document.querySelector(".a24").onclick = function(){
+        alert("Не правильно!");
+        ochki = ochki - 75;
+        document.querySelector(".ochki").innerHTML = ochki;
+      }
+      document.querySelector(".a25").onclick = function(){
+        alert("Не правильно!");
+        ochki = ochki - 75;
+        document.querySelector(".ochki").innerHTML = ochki;
+      }
+
+      let black = function(){
+          document.querySelector(".yak").style.backgroundImage = "url(yakub.jpg)";
+          document.querySelector(".yak").style.backgroundSize = "100% 100%";
+        }
+        setTimeout(black, 3200);
+      
+        
+
+
+
+    </script>
+  </body>
+
+</html>
